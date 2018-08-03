@@ -1,15 +1,20 @@
 import math
 from nosFonctions import *
 
+#on utilise ici, notre propre fonction qui permet de recuperer un
+#chiffre entier tape au clavier
 a = tapezEntier()
 b = tapezEntier()
 c = tapezEntier()
 
-delta = (b*b) - 4*a*c
+#on sait que pour resoudre l'equation, on doit trouver le delta (google)
+delta = (b*b) - 4*a*c #ici, la formule trouve sur google
 print("le delta = ", delta)
 
 if delta > 0 :
     print ("2 valeurs possible.")
+    #si delta est plus grand que 0, on sait qu'on a 2 reponses
+    #et qu'il faut  utilise les formules suivantes (google)
     
     x1 = (-b + math.sqrt(delta)) / (2*a)
     x2 = (-b + math.sqrt(delta)) / (2*a)
